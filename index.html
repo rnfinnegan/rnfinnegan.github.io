@@ -1,21 +1,514 @@
 
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="home">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kasper Marstal</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Kasper Marstal's personal website.">
+    <link rel="canonical" href="/">
 
-  <h1>Posts</h1>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/style.css">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-</div>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-58505725-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+
+
+    <body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Kasper Marstal</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#expedu">Experience &amp; Education</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#resume">Resume</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Hi, I'm Kasper Marstal</div>
+                <div class="intro-heading">M.Sc. Eng., Medicine &amp; Technology </br> programmer </br> and problem solver </div>
+                <a href="#about" class="page-scroll btn btn-xl">Tell Me More</a>
+            </div>
+        </div>
+    </header>
+<!--
+        
+          
+        
+          
+        
+ -->
+
+
+    <!-- Services Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About Me</h2>
+                    <h3 class="section-subheading text-muted">4+ years of experience in:</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="experience-heading">Medical Image Processing</h4>
+                    <p class="text-muted">I specialize in medical image analysis, machine learning and model-based image registration. I have international experience and practical understanding of radiology through my 10 years working at Frederiksberg Hospital, first as a project assistant and later doing fulltime R&amp;D.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-mortar-board fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="experience-heading">Research &amp; Development</h4>
+                    <p class="text-muted">My main interest is improving clinical workflow using computer aided diagnosis. I'm result-oriented, versatile, analytical, experienced in project management and scientific paper writing. It is important to me that my science-y algorithms are user-friendly so the (often not technical) clinical personnel can actually put them to good use.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="experience-heading">Being Extremely Motivated</h4>
+                    <p class="text-muted">I believe computer-based analysis of medical images and clinical data will change the future of modern healthcare and I'm absolutely thrilled to be working in this field. The tools I develop help doctors improve patient's quality of life. THAT is motivation. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects Grid Section -->
+    <section id="projects" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Projects</h2>
+                    <h3 class="section-subheading text-muted">Work that I'm proud of.</h3>
+                </div>
+            </div>
+            <div class="row">
+            
+                <div class="col-md-4 col-sm-6 projects-item">
+                    <a href="#projectsModal1" class="projects-link" data-toggle="modal">
+                        <div class="projects-hover">
+                            <div class="projects-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/projects/simpleelastix-thumbnail.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="projects-caption">
+                        <h4>SimpleElastix</h4>
+                        <p class="text-muted">User-friendly image registration library</p>
+                    </div>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 projects-item">
+                    <a href="#projectsModal4" class="projects-link" data-toggle="modal">
+                        <div class="projects-hover">
+                            <div class="projects-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/projects/cochlea-implant-thumbnail.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="projects-caption">
+                        <h4>Cochlea Implants</h4>
+                        <p class="text-muted">On statistical models of cochlea</p>
+                    </div>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 projects-item">
+                    <a href="#projectsModal2" class="projects-link" data-toggle="modal">
+                        <div class="projects-hover">
+                            <div class="projects-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/projects/master-thesis-thumbnail.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="projects-caption">
+                        <h4>Master Thesis</h4>
+                        <p class="text-muted">On image registration</p>
+                    </div>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 projects-item">
+                    <a href="#projectsModal3" class="projects-link" data-toggle="modal">
+                        <div class="projects-hover">
+                            <div class="projects-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/projects/bachelor-thesis-thumbnail.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="projects-caption">
+                        <h4>Bachelor Thesis</h4>
+                        <p class="text-muted">On cartilage segmentation</p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="expedu">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Experience &amp; Education </h2>
+                    <h3 class="section-subheading text-muted">Timeline</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/physics.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2007-2011</h4>
+                                    <h4 class="subheading">B.Sc. Physics</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">A curiosity about the universe had me study physics at the University of Copenhagen. After finishing the mandatory electromagnetism-, relativity- and quantum mechanics courses I found an interest in mathematical modeling, programming, and medical image analysis. An abstract of my bachelor’s thesis on knee cartilage segmentation was presented at EULAR 2011, London, and I gave an oral presentation at IEEE ELMAR 2011, Zadar, Croatia, which won the “Best Student Paper” award.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/medicinandtechnology.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2011-2014</h4>
+                                    <h4 class="subheading">M.Sc. Eng., Medicin &amp; Technology</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">For my Master's, I specialized in machine learning and medical image processing. Being part medicine and part computer science, this degree provides a fantastic multi-disciplinary foundation for working in this field. I wrote my Master's thesis on automatic construction of Active Appearance Models and was supervised by Tim Cootes.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/imageanalysis.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2014-2015</h4>
+                                    <h4 class="subheading">Scientific Project Officer</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">After finishing my studies I moved to London to work for Image Analysis Ltd as Scientific Project Officer. This arrangement had been made long before I even started my Master's between myself and Olga Kubassova, CEO and founder. My responsibilities included developing the core image processing algorithms for Image Analysis' cloud-based MRI scoring platform, supporting clinical clients and keeping our servers up and running. I had a great time. Image Analysis is changing the future of DCE-MRI's role in cancer and inflammatory diseases diagnosis.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/medicinandtechnology.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2015-present</h4>
+                                    <h4 class="subheading">Ph.D. in Medical Image Registration</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">In early 2015 I humbly left my job at Image Analysis to pursue a Ph.D. in medical image registration at Biomedical Imaging Group Rotterdam, Netherlands. I had to do it. I have ideas for a model-based registration framework that <i>needs</i> to get out of my head. I am supervised by the authors of elastix, an open source medical image registration package used extensively throughout my studies. Meeting these guys for the first time was like meeting the rockstars if my favorite band! I am such a nerd.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Resume</h2>
+                    <h3 class="section-subheading text-muted">You can also <a href="resume.pdf">download my resume as pdf</a>.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <iframe src="resume.html" style="border: 0; width: 100%; -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75); -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75); box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75)" id="iframe-resume" scrolling="no">
+                Your browser does not support iframes. Download my resume above.
+            </iframe>
+        </div>
+    </section>
+      <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Kasper Marstal 2015</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        
+                        <li><a href="kaspermarstal@gmail.com"><i class="fa fa-envelope"></i></a>
+                        </li>
+                        
+                        <li><a href="http://www.linkedin.com/in/kaspermarstal"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        
+                        <li><a href="http://github.com/kaspermarstal"><i class="fa fa-github"></i></a>
+                        </li>
+                        
+                        <li><a href="http://stackoverflow.com/users/346365/kasper-marstal"><i class="fa fa-stack-overflow"></i></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        Handmade using environmentally friendly code
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <!-- projects Modals -->
+ 
+    <div class="projects-modal modal fade" id="projectsModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>SimpleElastix</h2>
+                            <hr class="star-primary">
+                            <img src="img/projects/simpleelastix-thumbnail.png" class="img-responsive img-centered img-projects" alt="image-alt">
+                            <p>The goal of SimpleElastix is to bring the robust medical image registration algorithms of elastix to a wider audience by integrating elastix with SimpleITK. This package provides elastix and transformix bindings for Python, Java, R, Ruby, Octave, Lua, Tcl and C# and lots of goodies that make state-of-the-art medical image registration really easy to do. Click the link to go the SimpleElastix Github page.</p>
+                            <ul class="list-inline item-details">
+                                <li>Date:
+                                    <strong><a href="#">December 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Technologies:
+                                    <strong><a href="#">Code generation, C++, SWIG, ITK, elastix</a>
+                                    </strong>
+                                </li>
+                                <li>Link:
+                                    <strong><a href="https://github.com/kaspermarstal/SimpleElastix">Click Me</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-modal modal fade" id="projectsModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Cochlea Implants</h2>
+                            <hr class="star-primary">
+                            <img src="img/projects/cochlea-implant-thumbnail.png" class="img-responsive img-centered img-projects" alt="image-alt">
+                            <p>This is a project I did for DTU Compute on the Hear-EU project (http://www.hear-eu.eu/). In this work, microCT images are registered to obtain correspondences for construction of statistical shape models of inner-ear anatomy. Today, standard CT images are used during surgical planning but these are of low resolution compared to the size of cochlea and contain a significant amount of noise. Model-based statistical understanding of shape variability from microCT images can be used to enhance the avialable anatomical information for surgical planning.</p>
+                            <ul class="list-inline item-details">
+                                <li>Date:
+                                    <strong><a href="#">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Technologies:
+                                    <strong><a href="#">Matlab, C++</a>
+                                    </strong>
+                                </li>
+                                <li>Link:
+                                    <strong><a href="cochlea-implants-april-2014.pdf">Click Me</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-modal modal fade" id="projectsModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Master Thesis</h2>
+                            <hr class="star-primary">
+                            <img src="img/projects/master-thesis-thumbnail.png" class="img-responsive img-centered img-projects" alt="image-alt">
+                            <p>This is the thesis I wrote for my Master's degree in Medicin &amp; Technology. The thesis extends the work of Zhang et al. on 2D Parts+Geometry Models to 3D images. A Parts+Geometry learns the spatial relationship between anatomical landmarks in images to find a sparse set of corresponding landmarks. The correspondences can be used to automatically initialize an Active Shape Model (ASM) or an Active Appearance Model (AAM). The big background image at the top of the page is taken from this thesis.</p>
+                            <ul class="list-inline item-details">
+                                <li>Date:
+                                    <strong><a href="#">July 2013</a>
+                                    </strong>
+                                </li>
+                                <li>Technologies:
+                                    <strong><a href="#">Matlab, C++</a>
+                                    </strong>
+                                </li>
+                                <li>Link:
+                                    <strong><a href="kasper-marstal-master-thesis-july-2013.pdf">Click Me</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-modal modal fade" id="projectsModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Bachelor Thesis</h2>
+                            <hr class="star-primary">
+                            <img src="img/projects/bachelor-thesis-thumbnail.png" class="img-responsive img-centered img-projects" alt="image-alt">
+                            <p>This is the thesis I wrote for my degree in B.Sc. Physics. The work was presented at the student session of the IEEE ELMAR 2011 Conference and won the Best Student Paper Award. The thesis presents an algorithm for semi-automatic segmentation of cartilage in magnetic resonance images acquired from knees of patients with clinically verified osteoarthritis. The method is tested on 50 1.5T magnetic resonance images and allows for more accurate analysis of 3D cartilage models in clinical investigations. Results were compared to state-of-the-art techniques and were favored by clinical professionals.</p>
+                            <ul class="list-inline item-details">
+                                <li>Date:
+                                    <strong><a href="#">August 2011</a>
+                                    </strong>
+                                </li>
+                                <li>Technologies:
+                                    <strong><a href="#">Matlab, C++, CUDA</a>
+                                    </strong>
+                                </li>
+                                <li>Link:
+                                    <strong><a href="kasper-marstal-bachelor-thesis-august-2011.pdf">Click Me</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/classie.js"></script>
+    <script src="/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/js/jqBootstrapValidation.js"></script>
+    <script src="/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/agency.js"></script>
+
+
+    </body>
+</html>
