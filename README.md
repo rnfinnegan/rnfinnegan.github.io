@@ -1,1 +1,1 @@
-This repo hosts [kaspermarstal.github.io](http://kaspermarstal.github.io/). 
+This repo hosts [my personal page](http://rnfinnegan.github.io/). 
