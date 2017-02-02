@@ -5,8 +5,8 @@ description: "Robert Finnegan's personal website."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 3E606F
-  secondary: 91AA9D
+  primary: 001133
+  secondary: 004d4d
   secondary-dark: 333
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
