@@ -1,6 +1,6 @@
 # Site settings
 title: Robert Finnegan
-email: R.N.Finnegan@gmail.com
+email: Robert.N.Finnegan@gmail.com
 description: "Robert Finnegan's personal website."
 
 # Color settings (hex-codes without the leading hash-tag)
@@ -12,7 +12,7 @@ color:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: envelope
-    url: R.N.Finnegan@gmail.com
+    url: Robert.N.Finnegan@gmail.com
   - title: linkedin
     url: http://www.linkedin.com/in/robertfinnegan
   - title: github
